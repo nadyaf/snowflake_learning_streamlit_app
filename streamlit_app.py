@@ -34,7 +34,7 @@ try:
   else:
     fruit_from_api = get_fruityvice_data(fruit_choice)
     streamlit.dataframe(fruit_from_api)
-  except URLError as e:
+except URLError as e:
   streamlit.error()
   
 
